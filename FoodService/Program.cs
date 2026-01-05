@@ -21,20 +21,21 @@ services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(
         configuration.GetConnectionString("DefaultConnection"),
-        sql => sql.CommandTimeout(3)
+        sql => sql.CommandTimeout(10)
     );
 });
 // Servicios
-services.AddTransient<Cliente>();
-services.AddTransient<item>();
+services.AddTransient<ClienteService>();
+services.AddTransient<ItemService>();
 
 // FORM (ESTO ES CLAVE)
 services.AddTransient<Form1>();
 services.AddTransient<SnackForm>();
+services.AddTransient<ClientForm>();
 
 
 // Build
 using var provider = services.BuildServiceProvider();
 
 // ARRANQUE CORRECTO
-Application.Run(provider.GetRequiredService<SnackForm>());
+Application.Run(provider.GetRequiredService<ClientForm>());

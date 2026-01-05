@@ -28,7 +28,7 @@ namespace FoodService.Controls
         private int codigo;
         private double precio;
         Image image;
-        private Model.Item _item;
+        private Model.item _item;
 
         String formatItemName = "<div align=\"center\"><b><font size=\"+2\r\n\"><i>{0}</i></font></b></div>";
 
@@ -104,8 +104,8 @@ namespace FoodService.Controls
             {
                 ItemInfoForm info = new ItemInfoForm();
 
-                info.Picture = _item.Imagen != null
-                    ? _item.Imagen.ToImage()               // 👈 conversión aquí
+                info.Picture = _item.imagen != null
+                    ? _item.imagen.ToImage()               // 👈 conversión aquí
                     : panelEx1.Style.BackgroundImage;
 
                 info.Caption = item.nombre;
@@ -221,7 +221,9 @@ namespace FoodService.Controls
             set
             {
                 image = value;
-                this.panelEx1.Style.BackgroundImage = image;
+                image = image!= null ?
+                this.panelEx1.Style.BackgroundImage = image
+                : image = this.panelEx1.Style.BackgroundImage;
             }
         }
 
@@ -233,7 +235,7 @@ namespace FoodService.Controls
             this.ControlsVisible = true;
         }
 
-        public Model.Item item
+        public Model.item item
         {
             get { return _item; }
             set { _item = value; }

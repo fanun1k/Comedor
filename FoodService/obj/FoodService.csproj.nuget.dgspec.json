@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FaNunk\\source\\repos\\FoodService\\FoodService\\FoodService.csproj": {}
+    "C:\\Users\\LENOVO\\Desktop\\Comedor\\FoodService\\FoodService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FaNunk\\source\\repos\\FoodService\\FoodService\\FoodService.csproj": {
+    "C:\\Users\\LENOVO\\Desktop\\Comedor\\FoodService\\FoodService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FaNunk\\source\\repos\\FoodService\\FoodService\\FoodService.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Comedor\\FoodService\\FoodService.csproj",
         "projectName": "FoodService",
-        "projectPath": "C:\\Users\\FaNunk\\source\\repos\\FoodService\\FoodService\\FoodService.csproj",
-        "packagesPath": "C:\\Users\\FaNunk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FaNunk\\source\\repos\\FoodService\\FoodService\\obj\\",
+        "projectPath": "C:\\Users\\LENOVO\\Desktop\\Comedor\\FoodService\\FoodService.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LENOVO\\Desktop\\Comedor\\FoodService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\FaNunk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\FaNunk\\source\\repos\\FoodService\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\FaNunk\\source\\repos\\FoodService\\Model\\Model.csproj"
+              "C:\\Users\\LENOVO\\Desktop\\Comedor\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\LENOVO\\Desktop\\Comedor\\Model\\Model.csproj"
               }
             }
           }
@@ -48,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -88,25 +84,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\FaNunk\\source\\repos\\FoodService\\Model\\Model.csproj": {
+    "C:\\Users\\LENOVO\\Desktop\\Comedor\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FaNunk\\source\\repos\\FoodService\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Comedor\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\FaNunk\\source\\repos\\FoodService\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\FaNunk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FaNunk\\source\\repos\\FoodService\\Model\\obj\\",
+        "projectPath": "C:\\Users\\LENOVO\\Desktop\\Comedor\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LENOVO\\Desktop\\Comedor\\Model\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\FaNunk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -114,7 +106,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -132,7 +123,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -183,7 +175,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

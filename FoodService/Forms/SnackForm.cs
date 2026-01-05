@@ -21,16 +21,17 @@ namespace FoodService.Forms
         private ItemUI itemSelected;
         private OrderPanel orderPanel;
         private int tipo;
-        private readonly item items;
-        public SnackForm(item _item)
+        private item item;
+        private ItemService itemService;
+        public SnackForm(ItemService _itemService)
         {
             InitializeComponent();
-            items = _item;
+            itemService = _itemService;
+            
         }
-        public SnackForm(OrderPanel op,int tipo)
+        public void Init(OrderPanel op,int tipo)
         {
             itemSelected = null;
-            InitializeComponent();
             orderPanel = op;
             if (tipo == MANUAL)
             {
@@ -139,9 +140,9 @@ namespace FoodService.Forms
 
         private void MenuForm_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("entro al load");
+           
             lbl_date.Text = DateTime.Now.ToString("dd/MM/yyyy");
-            List<item> _items = items.GetByAll();
+            List<item> _items =itemService.GetByAll();
             foreach (var item in _items)
             {
                 ItemUI i = new ItemUI();
@@ -150,9 +151,7 @@ namespace FoodService.Forms
                 i.Codigo = item.id;
                 i.item = item;
                 i.SelectItem(false);
-                /*Image img =item.imagen; 
-                if(img != null)
-                    i.Image = img;*/
+                i.Image = item.imagen.ToImage();
                 AddItem(i);
             }
 

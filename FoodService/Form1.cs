@@ -3,11 +3,12 @@ namespace FoodService
 {
     public partial class Form1 : Form
     {
-        private readonly Cliente _clientes;
-        public Form1(Cliente clientes)
+        private readonly ClienteService clienteService;
+        private cliente _cliente;
+        public Form1(ClienteService _clienteService)
         {
             InitializeComponent();
-            _clientes = clientes;
+            clienteService = _clienteService;
             
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -15,10 +16,10 @@ namespace FoodService
             try
             {
                
-                var lista = _clientes.ObtenerTodos();
+                List<cliente> clientes= clienteService.ObtenerTodos();   
 
                 dgvClientes.AutoGenerateColumns = true;
-                dgvClientes.DataSource = lista;
+                dgvClientes.DataSource = clientes;
             }
             catch (Exception ex)
             {
