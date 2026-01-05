@@ -1,0 +1,51 @@
+# =====================================
+# Visual Studio
+# =====================================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =====================================
+# Carpetas de compilación comunes
+# =====================================
+bin/
+obj/
+
+# Carpetas Debug / Release de cada proyecto
+Model/bin/
+Model/obj/
+Model/Debug/
+Model/Release/
+
+FoodService/bin/
+FoodService/obj/
+FoodService/Debug/
+FoodService/Release/
+
+# =====================================
+# Rider / JetBrains (opcional)
+# =====================================
+.idea/
+
+# =====================================
+# EF Core / bases locales
+# =====================================
+*.mdf
+*.ldf
+
+# =====================================
+# NuGet
+# =====================================
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# =====================================
+# Logs y temporales
+# =====================================
+*.log
+Thumbs.db
+desktop.ini
