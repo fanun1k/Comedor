@@ -1,0 +1,14 @@
+{
+  "runtimeOptions": {
+    "tfm": "net10.0",
+    "additionalProbingPaths": [
+      "C:\\Users\\FaNunk\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\FaNunk\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+    ],
+    "configProperties": {
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,
+      "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
+    }
+  }
+}
